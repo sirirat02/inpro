@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>สรุปยอดขาย</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="img/logo.jpg" alt="" class="logo">
+            <h1 href="ceo_home_page.html" style="font-family: Itim;">CEO - HOME</h1>
+        </div>
+        <nav class="nav" style="margin-left: 20%;">
+            <a href="approve_page.html" class="nav-item" >อนุมัติคำสั่งซื้อ/เช่า</a>
+            <a href="#" class="nav-item">อนุมัติเคลม</a>
+            <a href="summary_page.html" class="nav-item ">สรุปยอดขาย</a>
+            <a href="view_leave_types.html" class="nav-item active">รายงานสภาพรถ</a>
+            <a href="#" class="nav-item">รายงานเคส</a>
+            <a href="#" class="nav-item">ประวัติการส่งซ่อมรถและอุปกรณ์การแพทย์</a>
+            <a href="#" class="nav-item">สถิติการใช้งานรถ</a>
+        </nav>
+    </header>
+
+    
+    <main class="main-content">
+        <section class="approval-section">
+            <div class="equipment-card-static-car">
+                <div class="equipment-details">
+
+                    <label class="label-text">Level รถ :</label>
+                    <select class="select-case-type" name="" id="">
+                        <option value="" selected>กรุณาเลือกประเภทเคส</option>
+                        <option value="EVENT">Level 1</option>
+                        <option value="Referral">Level 2</option>
+                        <option value="EmergencyCase">Level 3</option>
+                    </select>
+                    <label class="label-text">เดือน :</label>
+                    <select class="select-month" name="" id="">
+                        <option value="" selected>กรุณาเลือกเดือน</option>
+                        <option value="">มกราคม</option>
+                        <option value="">กุมภาพันธ์</option>
+                        <option value="">มีนาคม</option>
+                        <option value="">เมษายน</option>
+                        <option value="">พฤษภาคม</option>
+                        <option value="">มิถุนายน</option>
+                        <option value="">กรกฎาคม</option>
+                        <option value="">สิงหาคม</option>
+                        <option value="">กันยายน</option>
+                        <option value="">ตุลาคม</option>
+                        <option value="">พฤศจิกายน</option>
+                        <option value="">ธันวาคม</option>
+                        <option value="">ทุกเดือน</option>
+                    </select>
+                    <label class="label-text">ปี :</label>
+                    <select class="select-year" name="" id="">
+                        <option value="" selected>กรุณาเลือกปี (ค.ศ)</option>
+                        <option value="">2024</option>
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                        <option value="">2019</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                        <option value="">2016</option>
+                        <option value="">2015</option>
+                    </select>
+                    <button type="submit" class="btn btn-search" > <a class="link-search-btn" href="#">ยืนยัน</a> </button>
+                    <!-- <button type="reset" class="btn btn-reset">รีเซ็ต</button> -->
+                </div>
+        </section>
+
+        <main class="content">
+            <div>
+                <section class="approval-section">
+                    <div class="equipment-card">
+                        <!-- <input type="checkbox" class="select-checkbox"> -->
+                        <img src="c:\Users\Admin\Desktop\งาน\van-ambulance-vehicle-emergency-medical-services-toyota-commuter-abl-commu-alsv-wang-saphung-hospital-loei-carryboy.jpg" alt="รถพยาบาล1" class="equipment-image">
+                        <div class="equipment-details">
+                            <h2 class="equipment-title">ทะเบียนรถ : ฟหก 1234 พิษณุโลก </h2>
+                            <p class="equipment-info">อุปกรณ์ทางการแพทย์ในรถ : พร้อมใช้งาน</p>
+                        </div>
+                    </div>
+        
+                    <div class="equipment-card">
+                        <!-- <input type="checkbox" class="select-checkbox"> -->
+                        <img src="c:\Users\Admin\Desktop\งาน\van-ambulance-vehicle-emergency-medical-services-toyota-commuter-abl-commu-alsv-wang-saphung-hospital-loei-carryboy.jpg" alt="รถพยาบาล2" class="equipment-image">
+                        <div class="equipment-details">
+                            <div class="equipment-details">
+                                <h2 class="equipment-title">ทะเบียนรถ : ฟกต 44 พิษณุโลก </h2>
+                                <p class="equipment-info">อุปกรณ์ทางการแพทย์ในรถ : ไม่พร้อมใช้งาน</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+
+        </main>
+  
+    
+    
+</body>
+
+</html>
+
+<script>
+    // Function to handle form submission
+    function updateCarStatus() {
+      // Get values from the dropdowns
+      const level = document.querySelector('.select-case-type').value;
+      const month = document.querySelector('.select-month').value;
+      const year = document.querySelector('.select-year').value;
+  
+      // Example data mapping for car status
+      const carData = {
+        'Level 1': {
+          image: 'img/car-level1.png',
+          status: 'พร้อมใช้งาน',
+          description: 'ทะเบียนรถ : ฟหก 1234 พิษณุโลก<br>อุปกรณ์ทางการแพทย์ในรถ : พร้อมใช้งาน',
+        },
+        'Level 2': {
+          image: 'img/car-level2.png',
+          status: 'อยู่ระหว่างซ่อม',
+          description: 'ทะเบียนรถ : ขจร 5678 เชียงใหม่<br>อุปกรณ์ทางการแพทย์ในรถ : ชำรุด',
+        },
+        'Level 3': {
+          image: 'img/car-level3.png',
+          status: 'ไม่พร้อมใช้งาน',
+          description: 'ทะเบียนรถ : ทวล 9876 กรุงเทพฯ<br>อุปกรณ์ทางการแพทย์ในรถ : ไม่สามารถใช้งานได้',
+        },
+      };
+  
+      // Find car data by level
+      const carInfo = carData[level];
+  
+      // Update DOM with car details
+      const displayDiv = document.getElementById('car-status-display');
+      if (carInfo) {
+        displayDiv.innerHTML = `
+          <img src="${carInfo.image}" alt="รถ ${level}" class="car-image">
+          <p>${carInfo.description}</p>
+          <p>สถานะรถ: ${carInfo.status}</p>
+        `;
+      } else {
+        displayDiv.innerHTML = '<p>โปรดเลือก Level รถ เพื่อดูข้อมูล</p>';
+      }
+    }
+  </script>
+  

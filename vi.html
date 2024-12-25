@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>อนุมัติคำสั่งซื้อ/เช่า</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="img/logo.jpg" alt="" class="logo">
+            <h1 href="ceo_home_page.html" style="font-family: Itim;">CEO - HOME</h1>
+        </div>
+        <nav class="nav" style="margin-left: 20%;">
+            <a href="approve_page.html" class="nav-item">อนุมัติคำสั่งซื้อ/เช่า</a>
+            <a href="#" class="nav-item">อนุมัติเคลม</a>
+            <a href="summary_page.html" class="nav-item">สรุปยอดขาย</a>
+            <a href="view_leave_types.html" class="nav-item">รายงานสภาพรถ</a>
+            <a href="#" class="nav-item">รายงานเคส</a>
+            <a href="#" class="nav-item">ประวัติการส่งซ่อมรถและอุปกรณ์การแพทย์</a>
+            <a href="static_car_page.html" class="nav-item active">สถิติการใช้งานรถ</a>
+        </nav>
+    </header>
+    <br>
+
+    <main class="main-content">
+        <section class="approval-section">
+            <div class="equipment-card-static-car">
+                <div class="equipment-details">
+
+                    <label class="label-text">Level รถ :</label>
+                    <select class="select-case-type" name="" id="">
+                        <option value="" selected>กรุณาเลือกประเภทเคส</option>
+                        <option value="EVENT">Level 1</option>
+                        <option value="Referral">Level 2</option>
+                        <option value="EmergencyCase">Level 3</option>
+                    </select>
+                    <label class="label-text">เดือน :</label>
+                    <select class="select-month" name="" id="">
+                        <option value="" selected>กรุณาเลือกเดือน</option>
+                        <option value="">มกราคม</option>
+                        <option value="">กุมภาพันธ์</option>
+                        <option value="">มีนาคม</option>
+                        <option value="">เมษายน</option>
+                        <option value="">พฤษภาคม</option>
+                        <option value="">มิถุนายน</option>
+                        <option value="">กรกฎาคม</option>
+                        <option value="">สิงหาคม</option>
+                        <option value="">กันยายน</option>
+                        <option value="">ตุลาคม</option>
+                        <option value="">พฤศจิกายน</option>
+                        <option value="">ธันวาคม</option>
+                        <option value="">ทุกเดือน</option>
+                    </select>
+                    <label class="label-text">ปี :</label>
+                    <select class="select-year" name="" id="">
+                        <option value="" selected>กรุณาเลือกปี (ค.ศ)</option>
+                        <option value="">2024</option>
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                        <option value="">2019</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                        <option value="">2016</option>
+                        <option value="">2015</option>
+                    </select>
+                    <button type="submit" class="btn btn-search" > <a class="link-search-btn" href="view_leave_types.html">ยืนยัน</a> </button>
+                    <button type="reset" class="btn btn-reset">รีเซ็ต</button>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
